@@ -1,0 +1,16 @@
+<div *ngFor="let book of books">
+  <div class="row margin-top='1px;'">
+    <div class="col-xs-4">
+      <h2>{{ book.title }}</h2>
+      <h4>Author: {{ book.author }} </h4>
+      <h4>Country: {{ book.country }}</h4>
+      <h4>Language: {{ book.language }}</h4>
+      <h4>Pages: {{ book.pages }}</h4>
+      <h4>Year: {{ book.year }}</h4>
+      <h4>Wikipedia: <a [href]="book.link">Link</a></h4>
+    </div>
+    <div class="col-xs-8">
+      <img [src]="book.imageLink" alt="" class="img-responsive" style="max-height: 175px;">
+    </div>
+  </div>
+</div>
